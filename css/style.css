@@ -37,7 +37,7 @@ body{
     background-color: whitesmoke;
     position: relative;
     width: 30%;
-    height: 100px;
+    height:100px;
     overflow: hidden;
     padding: 23px 30px;
     border-radius: 20px;
@@ -102,21 +102,21 @@ body{
 
 .weather-box img{
     width: 60%;
-    margin-top: 30px;
+    margin-top: 5px;
 }
 
 .weather-box .temprature{
     position: relative;
     color: #050e2c;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 800;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: -16px;
 }
 
 .weather-box .temprature span{
     position: absolute;
-    margin-left: 4px;
+    margin-left: 3px;
     font-size: 1.5rem;
 }
 
@@ -131,7 +131,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .weather-details .humidity, .weather-details .wind{
@@ -153,7 +153,7 @@ body{
 
 .weather-details i{
     color: rgb(36, 36, 70);
-    font-size: 25px;
+    font-size: 45px;
     margin-top: 5px;
     margin-right: 10px;
 }
@@ -172,11 +172,10 @@ body{
 
 .not-found{
     width: 100%;
+    position: absolute;
     text-align: center;
-    margin-top: 50px;
-    scale: 0;
-    opacity: 0;
-    display: none;
+    top: 90px;
+    left: 0;
 }
 
 .not-found img{
@@ -190,12 +189,17 @@ body{
     margin-top: 15px;
 }
 
-.weather-box, .weather-details{
-    scale: 0;
-    opacity: 0;
+.weather-box, .weather-details, .not-found{
+    visibility: hidden;
 }
 
-.fadeIn{
+.weather-box.active, .weather-details.active, .not-found.active{
+    visibility: visible;
+}
+
+
+
+/* .fadeIn{
     animation: 0.5s fadeIn forwards;
     animation-delay: 0.5s;
 }
@@ -205,4 +209,4 @@ body{
         scale:1;
         opacity: 1;
     }
-}
+} */
