@@ -7,7 +7,10 @@
 }
 
 body{
-    background-color: rgb(53, 147, 235);
+    /* background-color: rgb(53, 147, 235); */
+    background: url(../images/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -17,6 +20,7 @@ body{
 .header{
     text-align: center;
     width: 100%;
+    color: #fbae3c;
     font-family: 'Courier New', Courier, monospace;
     font-size: 2.5rem;
     font-weight: bolder;
@@ -30,6 +34,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 /* main card */
@@ -41,7 +46,8 @@ body{
     overflow: hidden;
     padding: 23px 30px;
     border-radius: 20px;
-    transition: 0.6s ease-out;
+    box-shadow: 4px 5px 10px 0 rgb(255, 255, 255), inset 7px 6px 10px 0 rgba(0, 0, 0, 0.2) ;
+    transition: 0.5s ease-in;
 }
 
 /* search box */
@@ -199,7 +205,7 @@ body{
 
 
 
-/* .fadeIn{
+.fadeIn{
     animation: 0.5s fadeIn forwards;
     animation-delay: 0.5s;
 }
@@ -209,4 +215,4 @@ body{
         scale:1;
         opacity: 1;
     }
-} */
+}
